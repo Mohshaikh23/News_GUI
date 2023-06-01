@@ -10,7 +10,7 @@ class NewsApp:
     def __init__(self):
 
         # fetch data
-        self.data = requests.get('https://newsapi.org/v2/top-headlines?country=in&apiKey=07ce6431517e45c5b04b589c36e5bed6').json()
+        self.data = requests.get('https://newsapi.org/v2/top-headlines?country=us&apiKey=42722ab23ecd4c73819259cefeb18972').json()
         # initial GUI load
         self.load_gui()
         # load the 1st news item
@@ -20,7 +20,7 @@ class NewsApp:
         self.root = Tk()
         self.root.geometry('350x600')
         self.root.resizable(0,0)
-        self.root.title('Mera News App')
+        self.root.title("Today's News App")
         self.root.configure(background='black')
 
     def clear(self):
